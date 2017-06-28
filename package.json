@@ -1,0 +1,24 @@
+{
+  "name": "learning-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "http-server -c-1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supig/typescript.git"
+  },
+  "keywords": [
+    "learn",
+    "tutorial",
+    "typescript"
+  ],
+  "author": "supig",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/supig/typescript/issues"
+  },
+  "homepage": "https://github.com/supig/typescript#readme"
+}
