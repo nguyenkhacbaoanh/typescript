@@ -9,13 +9,15 @@ getBonus(); //si on ne declare que "value" dans la parenthèse,
 //on declare plusieur paramètres, les paramètres suivants peuvent
 // utiliser la valeur de paramètre pécédente sauf l'inverse
 // car il n'a pas été supporté "hoisting", il faut déclarer pour utiliser
-var salary_month_gross = function (day, smic, hour, result) {
+var salary_month_gross = function (day, smic, hour_day, bonus) {
     if (day === void 0) { day = 23; }
     if (smic === void 0) { smic = 9.76; }
-    if (hour === void 0) { hour = 8; }
-    if (result === void 0) { result = day * smic * hour; }
+    if (hour_day === void 0) { hour_day = 8; }
+    if (bonus === void 0) { bonus = 0.3; }
+    var salary_day = smic * hour_day;
+    var result = day * salary_day * bonus;
     console.log(arguments.length);
     console.log(result);
 };
-salary_month_gross();
+salary_month_gross(undefined, 10, 7);
 //# sourceMappingURL=defautparametrefunc.js.map
